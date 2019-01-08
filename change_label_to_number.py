@@ -4,7 +4,7 @@ import array
 import sys, csv
 
 # load dataset
-df = pd.read_csv(str(sys.argv[1]), delimiter='\t')
+df = pd.read_csv(str(sys.argv[1]), delimiter=',')
 # Or export it in many ways, e.g. a list of tuples
 tuples = [tuple(x) for x in df.values]
 
