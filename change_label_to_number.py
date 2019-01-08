@@ -12,18 +12,18 @@ tuples = [tuple(x) for x in df.values]
 dicts = df.to_dict().values()
 
 # Create a list to store the data
-label = []
+label2 = []
 
 # compare label and dataset
 # For each row in the column,
 for label in df['label']:
 	if label =="normal" :
-		label.append("0")
+		label2.append("0")
 	elif label =="malicious" :
-		label.append("1")
+		label2.append("1")
 
 # Create a column from the list
-df['label2'] = label
+df['label2'] = label2
 
 for index, row in df.iterrows():
 	print(row['label2'])
