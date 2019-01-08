@@ -25,10 +25,10 @@ for label in df['label']:
 # Create a column from the list
 df['label2'] = label2
 
-for index, row in df.iterrows():
-	print(row['label2'])
+# for index, row in df.iterrows():
+# 	print(row['label2'])
 
 # create column
 # label.append(np.where(df['src_ip']==dfLabel['ip_address'], 'yes', 'no')
 # print(df)
-# df.to_csv("./output/"+str(sys.argv[1]),quoting=csv.QUOTE_ALL)
+df.to_csv("./output/"+str(sys.argv[1]),quoting=csv.QUOTE_ALL)
